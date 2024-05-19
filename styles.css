@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to right, white, #1e90ff);
+  font-family: arial, sans-serif;
+}
+
+.finalForm {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  border: solid black 4px;
+  background-color: white;
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  justify-content: center;
+}
+.finalForm #budgetOutput {
+  margin: 20px;
+  padding: auto;
+}
+
+#incomeView h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+form .form-group {
+  margin-bottom: 20px;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1e90ff;
+  border-radius: 4px;
+}
+form button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: purple;
+  color: white;
+  border: soid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: orange;
+}/*# sourceMappingURL=styles.css.map */

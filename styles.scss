@@ -1,0 +1,77 @@
+//Variable HERE "MY MENU LOL"
+
+$primary-color: #1e90ff;
+$secondary-color: orange;
+$third-color: purple;
+$font-family: arial, sans-serif;
+$white-color: white;
+$black-color: black;
+
+@mixin gradient($grey-color, $black-color) {
+  background: linear-gradient(to right, $grey-color, $black-color);
+}
+body {
+  @include gradient($white-color, $primary-color);
+  font-family: $font-family;
+}
+
+.finalForm {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  border: solid black 4px;
+  background-color: white;
+  margin-top: 20px;
+  font-family: $font-family;
+  justify-content: center;
+  #budgetOutput {
+    margin: 20px;
+    padding: auto;
+  }
+}
+
+#incomeView {
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: $font-family;
+  }
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: $font-family;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: $third-color;
+    color: white;
+    border: soid black;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.scss" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Budget Tracker</h1>
+    <!--first form-->
+    <form class="form" onsubmit="addUserIncome(event)">
+      <div>
+        <label for="income">Income</label>
+        <input type="number" id="income" placeholder="$500" required min="1" />
+      </div>
+      <div>
+        <label for="incomeDescription"> Income Description</label>
+        <input type="text" id="incomeDescription" placeholder="job" required />
+      </div>
+      <button id="addIncomeButton" type="submit">Add</button>
+    </form>
+    <!--second form-->
+    <form class="form" onsubmit="addUserExpenses(event)">
+      <div>
+        <label for="expenses">Expense</label>
+        <input
+          type="number"
+          id="expenses"
+          placeholder="$100"
+          required
+          min="1"
+        />
+      </div>
+      <div>
+        <label for="expenseDescription">Enter Description of expense</label>
+        <input
+          type="text"
+          id="expenseDescription"
+          placeholder="rent"
+          required
+        />
+      </div>
+      <button id="addExpenseButton">Add</button>
+      <div id="displayMessage"></div>
+    </form>
+    <!--end of second form, start of budget display-->
+    <div class="finalForm">
+      <div class="form">
+        <h3>Income</h3>
+        <div id="incomeView"></div>
+      </div>
+      <div class="form">
+        <h3>Expenses</h3>
+        <div id="expenseView"></div>
+      </div>
+      <div class="form">
+        <h3>Budget</h3>
+        <div id="budgetOutput"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
